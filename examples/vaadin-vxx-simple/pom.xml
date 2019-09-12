@@ -17,17 +17,15 @@
     limitations under the License.
 -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.apache.tomee</groupId>
   <artifactId>vaadin-vxx-simple</artifactId>
-  <version>8.0.0-SNAPSHOT</version>
+  <version>8.0.1-SNAPSHOT</version>
 
-  <name>OpenEJB :: Examples :: Vaadin LATEST</name>
+  <name>TomEE :: Examples :: Vaadin LATEST</name>
   <packaging>war</packaging>
 
   <!--
@@ -56,7 +54,7 @@ http://maven.apache.org/plugins/maven-deploy-plugin/
 
     <failOnMissingWebXml>false</failOnMissingWebXml>
 
-    <vaadin.version>12.0.3</vaadin.version>
+    <vaadin.version>14.0.0.rc1</vaadin.version>
   </properties>
 
   <pluginRepositories>
@@ -87,7 +85,7 @@ http://maven.apache.org/plugins/maven-deploy-plugin/
       <dependency>
         <groupId>javax</groupId>
         <artifactId>javaee-api</artifactId>
-        <version>8.0</version>
+        <version>[8.0,)</version>
         <scope>provided</scope>
       </dependency>
 

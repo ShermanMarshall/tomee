@@ -15,13 +15,12 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.superbiz</groupId>
   <artifactId>mp-config-source-database</artifactId>
-  <version>8.0.0-SNAPSHOT</version>
+  <version>8.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
 
   <name>MicroProfile :: Examples :: Config Source Database</name>
@@ -30,6 +29,7 @@
     <version.javaee-api>8.0</version.javaee-api>
     <version.microprofile>2.0.1</version.microprofile>
     <version.arquillian>1.1.13.Final</version.arquillian>
+    <tomee.version>8.0.1-SNAPSHOT</tomee.version>
   </properties>
 
   <dependencies>
@@ -57,7 +57,7 @@
     <dependency>
       <groupId>org.apache.tomee</groupId>
       <artifactId>apache-tomee</artifactId>
-      <version>${project.version}</version>
+      <version>${tomee.version}</version>
       <type>zip</type>
       <classifier>microprofile</classifier>
       <scope>test</scope>
@@ -73,7 +73,7 @@
     <dependency>
       <groupId>org.apache.tomee</groupId>
       <artifactId>ziplock</artifactId>
-      <version>${project.version}</version>
+      <version>${tomee.version}</version>
       <scope>test</scope>
     </dependency>
 
@@ -87,7 +87,7 @@
     <dependency>
       <groupId>org.apache.tomee</groupId>
       <artifactId>arquillian-tomee-remote</artifactId>
-      <version>${project.version}</version>
+      <version>${tomee.version}</version>
       <scope>test</scope>
     </dependency>
 
@@ -112,7 +112,7 @@
       <plugin>
         <groupId>org.apache.tomee.maven</groupId>
         <artifactId>tomee-maven-plugin</artifactId>
-        <version>${project.version}</version>
+        <version>${tomee.version}</version>
         <configuration>
           <tomeeClassifier>microprofile</tomeeClassifier>
           <context>${project.artifactId}</context>

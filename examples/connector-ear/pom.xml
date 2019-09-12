@@ -20,8 +20,8 @@
   <groupId>org.superbiz</groupId>
   <artifactId>connector-ear</artifactId>
   <packaging>pom</packaging>
-  <version>8.0.0-SNAPSHOT</version>
-  <name>OpenEJB :: Connector Examples :: Connector in EAR</name>
+  <version>8.0.1-SNAPSHOT</version>
+  <name>TomEE :: Connector Examples :: Connector in EAR</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

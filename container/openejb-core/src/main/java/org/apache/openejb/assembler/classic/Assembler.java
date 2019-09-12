@@ -523,10 +523,10 @@ public class Assembler extends AssemblerTool implements org.apache.openejb.spi.A
      * When given a complete OpenEjbConfiguration graph this method
      * will construct an entire container system and return a reference to that
      * container system, as ContainerSystem instance.
-     * <p/>
+     *
      * This method leverage the other assemble and apply methods which
      * can be used independently.
-     * <p/>
+     *
      * Assembles and returns the {@link CoreContainerSystem} using the
      * information from the {@link OpenEjbConfiguration} object passed in.
      * <pre>
@@ -2259,6 +2259,8 @@ public class Assembler extends AssemblerTool implements org.apache.openejb.spi.A
         }
     }
 
+    // @todo Remove this method in next release
+    @Deprecated
     public void destroyApplication(final AppContext appContext) throws UndeployException {
 
         final ReentrantLock l = lock;
