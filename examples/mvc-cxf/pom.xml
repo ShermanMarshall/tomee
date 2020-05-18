@@ -25,14 +25,14 @@
 
   <name>TomEE :: Examples :: MVC (CXF-based)</name>
   <description>OpenEJB :: Web Examples :: MVC 1.0 - Deltaspike</description>
-  <version>8.0.1-SNAPSHOT</version>
+  <version>8.0.3-SNAPSHOT</version>
   <url>http://tomee.apache.org</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <tomee.version>8.0.1-SNAPSHOT</tomee.version>
-    <version.deltaspike>1.9.0</version.deltaspike>
-    <version.ozark>1.0.0-m04</version.ozark>
+    <tomee.version>8.0.3-SNAPSHOT</tomee.version>
+    <version.deltaspike>1.9.3</version.deltaspike>
+    <version.krazo>1.1.0-M1</version.krazo>
     <version.arquillian>1.1.13.Final</version.arquillian>
     <version.graphene.webdriver>2.3.1</version.graphene.webdriver>
   </properties>
@@ -57,7 +57,7 @@
       <plugin>
         <groupId>org.apache.tomee.maven</groupId>
         <artifactId>tomee-maven-plugin</artifactId>
-        <version>8.0.1-SNAPSHOT</version>
+        <version>8.0.3-SNAPSHOT</version>
         <configuration>
           <args>-Xmx512m -XX:PermSize=256m</args>
         </configuration>
@@ -101,14 +101,14 @@
 
     <!-- MVC 1.0(JSR 371) -->
     <dependency>
-      <groupId>org.mvc-spec.ozark</groupId>
-      <artifactId>ozark-core</artifactId>
-      <version>${version.ozark}</version>
+      <groupId>org.eclipse.krazo</groupId>
+      <artifactId>krazo-core</artifactId>
+      <version>${version.krazo}</version>
     </dependency>
     <dependency>
-      <groupId>org.mvc-spec.ozark</groupId>
-      <artifactId>ozark-cxf</artifactId>
-      <version>${version.ozark}</version>
+      <groupId>org.eclipse.krazo</groupId>
+      <artifactId>krazo-cxf</artifactId>
+      <version>${version.krazo}</version>
     </dependency>
 
     <dependency>
@@ -163,7 +163,7 @@
     <dependency>
       <groupId>org.apache.tomee</groupId>
       <artifactId>ziplock</artifactId>
-      <version>8.0.1-SNAPSHOT</version>
+      <version>8.0.3-SNAPSHOT</version>
       <scope>test</scope>
     </dependency>
   </dependencies>

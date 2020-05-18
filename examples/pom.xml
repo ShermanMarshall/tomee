@@ -26,7 +26,7 @@
   <parent>
     <artifactId>tomee-project</artifactId>
     <groupId>org.apache.tomee</groupId>
-    <version>8.0.1-SNAPSHOT</version>
+    <version>8.0.3-SNAPSHOT</version>
   </parent>
 
   <artifactId>examples</artifactId>
@@ -155,6 +155,8 @@
     <module>simple-cdi-interceptor</module>
     <module>simple-ear</module>
     <module>simple-cmp2</module>
+    <module>simple-jms</module>
+    <module>simple-jms-context</module>
     <module>simple-mdb-and-cdi</module>
     <module>simple-mdb</module>
     <module>simple-mdb-with-descriptor</module>

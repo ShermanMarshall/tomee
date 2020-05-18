@@ -24,14 +24,14 @@
   <parent>
     <artifactId>tomee</artifactId>
     <groupId>org.apache.tomee</groupId>
-    <version>8.0.1-SNAPSHOT</version>
+    <version>8.0.3-SNAPSHOT</version>
   </parent>
 
   <modelVersion>4.0.0</modelVersion>
   <artifactId>tomee-embedded</artifactId>
   <packaging>jar</packaging>
   <name>TomEE :: TomEE :: TomEE Embedded</name>
-  <version>8.0.1-SNAPSHOT</version>
+  <version>8.0.3-SNAPSHOT</version>
 
   <build>
     <plugins>
@@ -335,10 +335,10 @@
       <groupId>org.apache.taglibs</groupId>
       <artifactId>taglibs-standard-jstlel</artifactId>
     </dependency>
-    <dependency>
+    <!--<dependency>
       <groupId>xalan</groupId>
       <artifactId>xalan</artifactId>
-    </dependency>
+    </dependency>-->
     <dependency>
       <groupId>org.apache.tomcat</groupId>
       <artifactId>tomcat-jdbc</artifactId>

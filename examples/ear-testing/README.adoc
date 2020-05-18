@@ -148,7 +148,7 @@ embedded testing with OpenEJB:
 </project>
 ....
 
-== TestCode
+== Test Code
 
 The test code is the same as always:
 
